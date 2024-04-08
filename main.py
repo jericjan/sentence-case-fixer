@@ -10,7 +10,7 @@ def message_box(title, message):
 
 a = pyperclip.paste()
 
-reg = re.compile(r"(?:(?<=\. |\? |\! )|(?<=^))\w|\bi'm\b|\bi\b")
+reg = re.compile(r"(?:(?<=\. |\? |\! )|(?<=^))\w|\bi'm\b|\bi\b", re.MULTILINE)
 
 
 def replacer(match):
